@@ -14,17 +14,23 @@ Using autoencoder, we are trying to remove the noise added in the encoder part a
 ![240131084-48b9dda4-34a2-440e-a433-df36548e74ba](https://github.com/Vishranthi-arun/convolutional-denoising-autoencoder/assets/93427278/aba61145-8263-40ec-99a5-bb28c0804a84)
 
 ## DESIGN STEPS
-
-
 ### STEP 1:
-Download and split the dataset into training and testing datasets
+Import the necessary libraries and dataset.
 
 ### STEP 2:
-rescale the data as that the training is made easy
+Load the dataset and scale the values for easier computation.
 
 ### STEP 3:
-create the model for the program , in this experiment we create to networks , one for encoding and one for decoding
+Add noise to the images randomly for both the train and test sets.
 
+### STEP 4:
+Build the Neural Model using Convolutional, Pooling and Up Sampling layers. Make sure the input shape and output shape of the model are identical.
+
+### STEP 5:
+Pass test data for validating manually.
+
+### STEP 6:
+Plot the predictions for visualization.
 
 ## PROGRAM
 ```
@@ -131,6 +137,7 @@ plt.show()
 
 ![201087292-b7e48aa9-f593-4574-aef7-230932e420c2](https://github.com/MEENA155/convolutional-denoising-autoencoder/assets/94677128/197555b2-d32b-4f2a-824d-d84f507e27d9)
 
+![240134548-80674d6f-e6ae-4515-ae5b-a27252de9cdf](https://github.com/Vishranthi-arun/convolutional-denoising-autoencoder/assets/93427278/bada8366-434a-4ad6-975f-9802b1209e62)
 
 
 ### Original vs Noisy Vs Reconstructed Image
